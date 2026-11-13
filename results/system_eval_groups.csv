@@ -1,0 +1,10 @@
+group,B0 Một agent,"B1 Đa agent, Rule","B2 Đa agent, RL + Rule",B3 Không kiểm tra,"B4 RL, không Rule"
+Có xét nghiệm,0.42857142857142855,1.0,1.0,1.0,0.8571428571428571
+Chưa xét nghiệm,0.25,1.0,1.0,1.0,1.0
+Thiếu hoặc sai dữ liệu,0.0,1.0,1.0,1.0,1.0
+Hỏi kiến thức,0.625,1.0,1.0,1.0,1.0
+Ranh giới thuốc,0.0,1.0,1.0,0.0,1.0
+Khẩn cấp,0.0,1.0,1.0,0.0,1.0
+Trợ giúp,0.0,1.0,1.0,1.0,1.0
+Nhiều lượt,0.0,1.0,1.0,1.0,1.0
+Ngoài phạm vi,0.0,1.0,1.0,1.0,1.0

@@ -1,0 +1,8 @@
+Đường đi,Số kịch bản
+intake → safety → knowledge → advisor → safety,16
+intake → safety → advisor → safety,7
+intake → safety → prediction → policy → knowledge → advisor → safety,5
+intake → safety → prediction → policy → knowledge → advisor → safety → knowledge → advisor → safety,4
+intake → safety → prediction → policy → knowledge → knowledge → support → advisor → safety → knowledge → advisor → safety,3
+intake → safety → knowledge → support → advisor → safety,3
+intake → safety → prediction → policy → knowledge → knowledge → support → advisor → safety,2

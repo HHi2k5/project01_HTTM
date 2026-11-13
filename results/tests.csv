@@ -1,0 +1,13 @@
+Kiểm thử,Loại,Kết quả,Ghi chú
+"Knowledge timeout có fallback, không bịa nguồn",Lỗi,PASS,
+"Prediction trả sai schema, Rule vẫn chuyển khám",Lỗi,PASS,
+Truy vấn vô nghĩa không trả bằng chứng,Lỗi,PASS,
+Phát hiện nguồn cũ,Lỗi,PASS,
+"Critic chặn bản nháp có liều, chẩn đoán, số và trích dẫn bịa",An toàn,PASS,
+Rule ghi đè khi HbA1c đạt ngưỡng,An toàn,PASS,
+RL không yêu cầu lại xét nghiệm đã biết,Biên,PASS,
+Đổi mmol/L sang mg/dL,Bình thường,PASS,
+"Tính BMI từ chiều cao, cân nặng",Bình thường,PASS,
+Bộ nhớ ghép hồ sơ qua hai lượt,Bình thường,PASS,
+Schema từ chối tin nhắn thiếu trường,Biên,PASS,
+"Xác suất DiaNet nằm trong [0, 1]",Biên,PASS,

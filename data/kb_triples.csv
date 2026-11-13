@@ -1,0 +1,184 @@
+﻿subject,subject_type,relation,object,object_type,doc_id
+Type 1,Disease,cần,Insulin,Drug,M01
+Type 2,Disease,có_thể_cần,Insulin,Drug,M02
+Đái tháo đường thai kỳ,Disease,có_thể_cần,Insulin,Drug,M12
+Metformin,Drug,thuộc_nhóm,Biguanide,DrugClass,M04
+MODY,Disease,là_dạng,Đái tháo đường đơn gen,Disease,T06
+Đái tháo đường sơ sinh,Disease,là_dạng,Đái tháo đường đơn gen,Disease,T06
+Đái tháo đường thai kỳ,Disease,tăng_nguy_cơ_về_sau,Type 2,Disease,T05
+Tiền đái tháo đường,Disease,tăng_nguy_cơ,Type 2,Disease,T07
+Pioglitazone,Drug,thuộc_nhóm,TZD,DrugClass,M09
+Acarbose,Drug,thuộc_nhóm,Ức chế alpha-glucosidase,DrugClass,M10
+Metformin,Drug,được_dùng_cho,Type 2,Disease,M04
+Ức chế SGLT2,DrugClass,được_dùng_cho,Type 2,Disease,M05
+Sulfonylurea,DrugClass,được_dùng_cho,Type 2,Disease,M06
+Đồng vận thụ thể GLP-1,DrugClass,được_dùng_cho,Type 2,Disease,M07
+Ức chế DPP-4,DrugClass,được_dùng_cho,Type 2,Disease,M08
+TZD,DrugClass,được_dùng_cho,Type 2,Disease,M09
+Ức chế alpha-glucosidase,DrugClass,được_dùng_cho,Type 2,Disease,M10
+Glinide,DrugClass,được_dùng_cho,Type 2,Disease,M11
+Tụy,Concept,tạo_ra,Insulin,Drug,X01
+Insulin,Drug,là,Hormone,Concept,X01
+Insulin,Drug,giúp,Glucose vào tế bào,Concept,X01
+Glucose,Concept,cung_cấp,Năng lượng,Concept,X01
+Đái tháo đường,Disease,đặc_trưng_bởi,Tăng đường huyết,Concept,X01
+Type 1,Disease,là_dạng,Đái tháo đường,Disease,X01
+Type 2,Disease,là_dạng,Đái tháo đường,Disease,X01
+Đái tháo đường thai kỳ,Disease,là_dạng,Đái tháo đường,Disease,X01
+Đái tháo đường đơn gen,Disease,là_dạng,Đái tháo đường,Disease,X01
+Thức ăn,Concept,cung_cấp,Glucose,Concept,X01
+Đái tháo đường,Disease,có_thể_có_triệu_chứng,Khát nhiều,Symptom,X02
+Đái tháo đường,Disease,có_thể_có_triệu_chứng,Tiểu nhiều,Symptom,X02
+Đái tháo đường,Disease,có_thể_có_triệu_chứng,Đói nhiều,Symptom,X02
+Đái tháo đường,Disease,có_thể_có_triệu_chứng,Nhìn mờ,Symptom,X02
+Đái tháo đường,Disease,có_thể_có_triệu_chứng,Mệt mỏi,Symptom,X02
+Đái tháo đường,Disease,có_thể_có_triệu_chứng,Vết thương lâu lành,Symptom,X02
+Đái tháo đường,Disease,có_thể_có_triệu_chứng,Nhiễm trùng thường xuyên,Symptom,X02
+Type 1,Disease,có_thể_có_triệu_chứng,Sụt cân không rõ nguyên nhân,Symptom,X02
+Type 2,Disease,có_thể_tiến_triển,Nhiều năm,Concept,X02
+Type 1,Disease,liên_quan,Tự miễn,Concept,X03
+Tự miễn,Concept,phá_hủy,Tế bào beta,Concept,X03
+Tế bào beta,Concept,tạo_ra,Insulin,Drug,X03
+Type 1,Disease,có_thể_xuất_hiện_ở,Mọi lứa tuổi,Concept,X03
+Type 1,Disease,tăng_nguy_cơ,Nhiễm toan ceton,Complication,X03
+Tích tụ ceton,Concept,có_thể_gây,Nhiễm toan ceton,Complication,X03
+Nhiễm toan ceton,Complication,là,Cấp cứu y tế,Complication,X03
+Type 2,Disease,liên_quan,Đề kháng insulin,Concept,X04
+Type 2,Disease,liên_quan,Thiếu insulin tương đối,Concept,X04
+Thừa cân hoặc béo phì,RiskFactor,tăng_nguy_cơ,Type 2,Disease,X04
+Ít hoạt động thể lực,RiskFactor,tăng_nguy_cơ,Type 2,Disease,X04
+Yếu tố di truyền,RiskFactor,góp_phần_nguy_cơ,Type 2,Disease,X04
+Type 2,Disease,có_thể,Không có triệu chứng,Symptom,X04
+Quản lý Type 2,Concept,bao_gồm_kiểm_soát,Đường huyết,Concept,X04
+Quản lý Type 2,Concept,bao_gồm_kiểm_soát,Huyết áp,Concept,X04
+Quản lý Type 2,Concept,bao_gồm_kiểm_soát,Cholesterol,Concept,X04
+Tiền sử gia đình có diabetes,RiskFactor,tăng_nguy_cơ,Type 2,Disease,X05
+Tuổi tăng,RiskFactor,tăng_nguy_cơ,Type 2,Disease,X05
+Vòng eo lớn,RiskFactor,tăng_nguy_cơ,Type 2,Disease,X05
+Mẹ bị diabetes thai kỳ khi mang thai,RiskFactor,tăng_nguy_cơ_ở_con,Type 2,Disease,X05
+BMI,Concept,hỗ_trợ_đánh_giá,Tình trạng cân nặng,Concept,X05
+HbA1c,Test,hỗ_trợ_chẩn_đoán,Đái tháo đường,Disease,X06
+HbA1c,Test,phản_ánh,Đường huyết trung bình khoảng 3 tháng,Concept,X06
+Đường huyết đói,Test,hỗ_trợ_chẩn_đoán,Đái tháo đường,Disease,X06
+Đường huyết đói,Test,đo,Đường huyết tại một thời điểm,Concept,X06
+OGTT,Test,hỗ_trợ_chẩn_đoán,Type 2,Disease,X06
+OGTT,Test,hỗ_trợ_chẩn_đoán,Tiền đái tháo đường,Disease,X06
+OGTT,Test,hỗ_trợ_chẩn_đoán,Đái tháo đường thai kỳ,Disease,X06
+Đường huyết ngẫu nhiên,Test,hỗ_trợ_chẩn_đoán_khi_có_triệu_chứng,Đái tháo đường,Disease,X06
+Máy đo đường huyết tại nhà,Test,không_dùng_để,Chẩn đoán đái tháo đường,Concept,X06
+Đề kháng insulin,Concept,đặc_trưng_bởi,Đáp ứng insulin kém,Concept,X07
+Đề kháng insulin,Concept,có_thể_dẫn_đến,Tăng đường huyết,Concept,X07
+Đề kháng insulin,Concept,có_thể_dẫn_đến,Tăng cân,Concept,X07
+Tiền đái tháo đường,Disease,đặc_trưng_bởi,Đường huyết cao hơn bình thường chưa đạt Type 2,Concept,X07
+Hoạt động thể lực,Lifestyle,giúp_phòng_hoặc_trì_hoãn,Type 2,Disease,X07
+Quản lý cân nặng,Lifestyle,giúp_phòng_hoặc_trì_hoãn,Type 2,Disease,X07
+Đái tháo đường,Disease,có_thể_gây,Tổn thương mạch máu,Complication,X08
+Đái tháo đường,Disease,tăng_nguy_cơ,Bệnh tim,Complication,X08
+Đái tháo đường,Disease,tăng_nguy_cơ,Đột quỵ,Complication,X08
+Đái tháo đường,Disease,có_thể_gây,Tổn thương thần kinh,Complication,X08
+Đái tháo đường,Disease,có_thể_gây,Bệnh thận do diabetes,Complication,X08
+Đái tháo đường,Disease,có_thể_gây,Vấn đề bàn chân,Complication,X08
+Đái tháo đường,Disease,có_thể_gây,Bệnh mắt do diabetes,Complication,X08
+Đái tháo đường,Disease,có_thể_gây,Bệnh nướu,Complication,X08
+Tổn thương thần kinh,Complication,góp_phần,Vấn đề bàn chân,Complication,X08
+Lưu thông máu kém,Concept,góp_phần,Vấn đề bàn chân,Complication,X08
+Insulin tác dụng nhanh,Drug,là_dạng,Insulin,Drug,X09
+Insulin tác dụng ngắn,Drug,là_dạng,Insulin,Drug,X09
+Insulin tác dụng trung bình,Drug,là_dạng,Insulin,Drug,X09
+Insulin tác dụng dài,Drug,là_dạng,Insulin,Drug,X09
+Insulin tác dụng siêu dài,Drug,là_dạng,Insulin,Drug,X09
+Bơm kim tiêm,Concept,dùng_đưa,Insulin,Drug,X09
+Bút insulin,Concept,dùng_đưa,Insulin,Drug,X09
+Bơm insulin,Concept,dùng_đưa,Insulin,Drug,X09
+Metformin,Drug,giảm,Gan tạo glucose,Concept,X10
+Metformin,Drug,cải_thiện,Sử dụng insulin,Concept,X10
+Ức chế SGLT2,DrugClass,tăng,Thải glucose qua nước tiểu,Concept,X10
+Sulfonylurea,DrugClass,kích_thích,Tiết insulin,Concept,X10
+Glinide,DrugClass,kích_thích,Tiết insulin,Concept,X10
+Ức chế alpha-glucosidase,DrugClass,làm_chậm,Hấp thu tinh bột,Concept,X10
+TZD,DrugClass,tăng,Nhạy cảm insulin,Concept,X10
+Ức chế DPP-4,DrugClass,bảo_vệ,Incretin,Concept,X10
+Đồng vận thụ thể GLP-1,DrugClass,hỗ_trợ_khi_cần,Tiết insulin,Concept,X10
+Đái tháo đường đơn gen,Disease,do,Biến thể một gen,Concept,X11
+Xét nghiệm di truyền,Test,hỗ_trợ_xác_định,Đái tháo đường đơn gen,Disease,X11
+MODY,Disease,thường_khởi_phát_ở,Thanh thiếu niên hoặc người trẻ,Concept,X11
+Đái tháo đường sơ sinh vĩnh viễn,Disease,là_dạng,Đái tháo đường sơ sinh,Disease,X11
+Đái tháo đường sơ sinh thoáng qua,Disease,là_dạng,Đái tháo đường sơ sinh,Disease,X11
+Đái tháo đường thai kỳ,Disease,xuất_hiện_trong,Thai kỳ,Concept,X12
+Đái tháo đường thai kỳ,Disease,thường_được_chẩn_đoán_ở,Tuần thai 24–28,Concept,X12
+Tăng glucose trong thai kỳ,Concept,tăng_nguy_cơ_ở_trẻ,Sinh non,Complication,X12
+Tăng glucose trong thai kỳ,Concept,tăng_nguy_cơ_ở_trẻ,Cân nặng khi sinh lớn,Complication,X12
+Tăng glucose trong thai kỳ,Concept,tăng_nguy_cơ_ở_trẻ,Hạ đường huyết sau sinh,Complication,X12
+Tăng glucose trong thai kỳ,Concept,tăng_nguy_cơ_ở_trẻ,Khó thở sau sinh,Complication,X12
+Đái tháo đường thai kỳ,Disease,tăng_nguy_cơ,Tiền sản giật,Complication,X12
+CGM,Test,ước_tính,Glucose trong dịch kẽ,Concept,X13
+CGM,Test,sử_dụng,Cảm biến,Concept,X13
+CGM,Test,theo_dõi,Xu hướng glucose,Concept,X13
+Bộ phát CGM,Concept,gửi_dữ_liệu_đến,Phần mềm hoặc thiết bị nhận,Concept,X13
+Tụy nhân tạo,Concept,bao_gồm,CGM,Test,X13
+Tụy nhân tạo,Concept,bao_gồm,Bơm insulin,Concept,X13
+Tụy nhân tạo,Concept,bao_gồm,Phần mềm điều khiển,Concept,X13
+Đái tháo đường,Disease,chẩn_đoán_bằng,HbA1c,Test,N01
+Tiền đái tháo đường,Disease,chẩn_đoán_bằng,HbA1c,Test,N01
+Đái tháo đường,Disease,chẩn_đoán_bằng,Đường huyết đói,Test,N02
+Tiền đái tháo đường,Disease,chẩn_đoán_bằng,Đường huyết đói,Test,N02
+Đái tháo đường,Disease,chẩn_đoán_bằng,OGTT,Test,N03
+Tiền đái tháo đường,Disease,chẩn_đoán_bằng,OGTT,Test,N03
+Đái tháo đường,Disease,chẩn_đoán_bằng,Đường huyết ngẫu nhiên,Test,N04
+Chẩn đoán đái tháo đường,Concept,cần,Xét nghiệm xác nhận,Test,N05
+Tuổi từ 35,RiskFactor,là_chỉ_định_xét_nghiệm,Type 2,Disease,N06
+Thừa cân hoặc béo phì,RiskFactor,là_chỉ_định_xét_nghiệm,Type 2,Disease,N06
+Tiền sử đái tháo đường thai kỳ,RiskFactor,là_chỉ_định_xét_nghiệm,Type 2,Disease,N06
+Tiền đái tháo đường,Disease,cần_theo_dõi,Xét nghiệm hằng năm,Test,N07
+Xét nghiệm bình thường,Test,cần_theo_dõi,Xét nghiệm lại sau 3 năm,Test,N07
+Thiếu máu,RiskFactor,làm_sai_lệch,HbA1c,Test,N09
+Biến thể hemoglobin,RiskFactor,làm_sai_lệch,HbA1c,Test,N09
+Thai kỳ,Concept,làm_sai_lệch,HbA1c,Test,N09
+Giảm 5–7% cân nặng,Lifestyle,giúp_phòng_hoặc_trì_hoãn,Type 2,Disease,N10
+Giảm đồ uống có đường,Lifestyle,giúp_phòng_hoặc_trì_hoãn,Type 2,Disease,N12
+Giảm khẩu phần,Lifestyle,giúp_phòng_hoặc_trì_hoãn,Type 2,Disease,N12
+Tiền đái tháo đường,Disease,có_thể_tiến_triển,Type 2,Disease,N13
+Đái tháo đường,Disease,có_thể_gây,Hạ đường huyết,Disease,N15
+Hạ đường huyết,Disease,có_thể_có_triệu_chứng,Run,Symptom,N16
+Hạ đường huyết,Disease,có_thể_có_triệu_chứng,Chóng mặt,Symptom,N16
+Hạ đường huyết,Disease,có_thể_có_triệu_chứng,Lú lẫn,Symptom,N16
+Hạ đường huyết,Disease,có_thể_có_triệu_chứng,Tim đập nhanh,Symptom,N16
+Hạ đường huyết,Disease,có_thể_có_triệu_chứng,Đau đầu,Symptom,N16
+Hạ đường huyết,Disease,có_thể_có_triệu_chứng,Mất ý thức,Symptom,N16
+Hạ đường huyết,Disease,có_thể_có_triệu_chứng,Co giật,Symptom,N16
+Insulin,Drug,tăng_nguy_cơ,Hạ đường huyết,Disease,N17
+Tuổi từ 65,RiskFactor,tăng_nguy_cơ,Hạ đường huyết,Disease,N17
+Bệnh thận do diabetes,Complication,tăng_nguy_cơ,Hạ đường huyết,Disease,N17
+Hạ đường huyết,Disease,xử_trí_bằng,Dùng glucose nhanh và đo lại,Lifestyle,N18
+Hạ đường huyết,Disease,xử_trí_bằng,Glucagon,Drug,N19
+Hạ đường huyết,Disease,có_thể_dẫn_đến,Cấp cứu y tế,Complication,N19
+Quản lý Type 2,Concept,bao_gồm_kiểm_soát,HbA1c,Test,N20
+Quản lý Type 2,Concept,bao_gồm_kiểm_soát,Ngừng hút thuốc,Lifestyle,N20
+Đái tháo đường,Disease,theo_dõi_bằng,CGM,Test,N23
+Đái tháo đường,Disease,theo_dõi_bằng,Máy đo đường huyết tại nhà,Test,N21
+Quản lý Type 2,Concept,sử_dụng,Phương pháp đĩa ăn,Lifestyle,N24
+Quản lý Type 2,Concept,sử_dụng,Giấc ngủ 7–8 giờ,Lifestyle,N27
+Rượu,RiskFactor,có_thể_gây,Hạ đường huyết,Disease,N25
+Hút thuốc,RiskFactor,tăng_nguy_cơ,Bệnh tim,Complication,N28
+Hút thuốc,RiskFactor,tăng_nguy_cơ,Đột quỵ,Complication,N28
+Hút thuốc,RiskFactor,tăng_nguy_cơ,Bệnh thận do diabetes,Complication,N28
+Hút thuốc,RiskFactor,tăng_nguy_cơ,Bệnh mắt do diabetes,Complication,N28
+Hút thuốc,RiskFactor,tăng_nguy_cơ,Tổn thương thần kinh,Complication,N28
+Bệnh mắt do diabetes,Complication,cần_theo_dõi,Khám mắt hằng năm,Test,N30
+Vấn đề bàn chân,Complication,cần_theo_dõi,Khám bàn chân mỗi lần tái khám,Test,N31
+Huyết áp cao,RiskFactor,tăng_nguy_cơ,Bệnh thận do diabetes,Complication,N29
+Đái tháo đường,Disease,có_thể_gây,Bệnh tim,Complication,N32
+Đái tháo đường,Disease,có_thể_gây,Đột quỵ,Complication,N32
+Giữ cân nặng bình thường,Lifestyle,giúp_phòng_hoặc_trì_hoãn,Type 2,Disease,N35
+Tránh thuốc lá,Lifestyle,giúp_phòng_hoặc_trì_hoãn,Type 2,Disease,N35
+Hoạt động tăng cơ,Lifestyle,hỗ_trợ,Quản lý Type 2,Concept,B01
+Hoạt động thể lực,Lifestyle,cải_thiện,Nhạy cảm insulin,Concept,B02
+Hoạt động thể lực,Lifestyle,hỗ_trợ,Quản lý Type 2,Concept,B06
+age,Feature,ánh_xạ_tới,Tuổi từ 35,RiskFactor,N06
+bmi,Feature,ánh_xạ_tới,Thừa cân hoặc béo phì,RiskFactor,N06
+HbA1c_level,Feature,ánh_xạ_tới,HbA1c,Test,N01
+blood_glucose_level,Feature,ánh_xạ_tới,Đường huyết đói,Test,N02
+blood_glucose_level,Feature,ánh_xạ_tới,Đường huyết ngẫu nhiên,Test,N04
+smoking_history,Feature,ánh_xạ_tới,Hút thuốc,RiskFactor,N28
+hypertension,Feature,ánh_xạ_tới,Huyết áp cao,RiskFactor,N29
+heart_disease,Feature,ánh_xạ_tới,Bệnh tim,Complication,N32

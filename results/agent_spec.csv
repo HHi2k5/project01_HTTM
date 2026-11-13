@@ -1,0 +1,9 @@
+Agent,Đầu vào,Đầu ra,Công cụ được phép,Chính sách
+Coordinator,Toàn bộ tin nhắn,"Kết quả cuối, trace","safe call, memory","Luồng theo trạng thái, retry, fallback"
+Intake,"Văn bản, bộ nhớ","Hồ sơ, ý định, lỗi",parse_profile,Luật regex tiếng Việt
+Safety,"Văn bản, bản nháp","Mức an toàn, lỗi kiểm duyệt","red_flags, critic",Luật
+Prediction,Hồ sơ,"Xác suất, nhãn, điểm, yếu tố","DiaNet, RiskNet",Deep Learning
+Policy,"Xác suất, hồ sơ","Hành động, luật đã kích hoạt","Q-table, threshold_lookup",RL + Rule
+Knowledge,Truy vấn,"Bằng chứng, quan hệ KG","search_kb, kg_neighbors","Hybrid RAG, tự mở rộng truy vấn"
+Advisor,Kết quả các agent,Câu trả lời có [n],compose,Mẫu câu bám bằng chứng
+Support,"Hồ sơ, bằng chứng",Danh sách chuẩn bị đi khám,make_checklist,Mẫu câu bám bằng chứng

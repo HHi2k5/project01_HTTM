@@ -1,0 +1,133 @@
+{
+ "q1": {
+  "text": "Nam 58 tuổi, BMI 33,5, tăng huyết áp, HbA1c 7,5%, đường huyết 180 mg/dL. Nguy cơ của tôi thế nào?",
+  "path": [
+   "intake",
+   "safety",
+   "prediction",
+   "policy",
+   "knowledge",
+   "knowledge",
+   "support",
+   "advisor",
+   "safety",
+   "knowledge",
+   "advisor",
+   "safety"
+  ],
+  "answer": "**Phân loại (DiaNet, đủ hai xét nghiệm):** xác suất ước lượng trên 99,9%, ngưỡng phân loại 39,7%, nhóm nguy cơ cao.\n\n**Dự đoán (RiskNet):** điểm nguy cơ tham khảo 85,7/100, mức High. Điểm này không phải xác suất mắc bệnh.\n\nYếu tố ảnh hưởng lớn trong mô hình: Xét nghiệm HbA1c (+82,5 điểm phần trăm).\n\n**Đối chiếu:** HbA1c 7,5% đạt ngưỡng: Ngưỡng đái tháo đường [8].\n\n**Đối chiếu:** Đường huyết 180 mg/dL thuộc nhóm: Chưa rõ đo lúc đói hay không [12].\n\n**Bước tiếp theo:** nên gặp bác sĩ để được đánh giá và xác nhận.\n\nBác sĩ thường dùng xét nghiệm thứ hai để xác nhận đái tháo đường. Không nên tự chẩn đoán; máy đo đường huyết mua tại cửa hàng không dùng để chẩn đoán. [1]\n\nGiảm 5 đến 7 phần trăm cân nặng ban đầu và duy trì có thể giúp phòng hoặc trì hoãn type 2. Nguồn dẫn nghiên cứu Diabetes Prevention Program. [4]\n\nMô phỏng RiskNet nếu thay đổi: giảm BMI về 24: −5,2 điểm. Đây là tương quan trong dữ liệu, không phải hiệu quả điều trị.\n\n**Danh sách chuẩn bị đi khám**\n- Mang kết quả đã có: HbA1c 7,5%, đường huyết 180 mg/dL; toa thuốc đang dùng.\n- Hỏi bác sĩ có cần xét nghiệm xác nhận không [1].\n- Hỏi mục tiêu HbA1c và huyết áp của bạn [7].\n- Hỏi lịch khám mắt và kiểm tra bàn chân [10] [11].\n- Ghi lại triệu chứng và câu hỏi của bạn. Hệ thống không tự đặt lịch hẹn.\n\nThông tin chỉ để tham khảo, không thay thế chẩn đoán của bác sĩ.",
+  "critic_rounds": 1,
+  "messages": 24,
+  "latency_ms": 26.52690000832081
+ },
+ "q2": {
+  "text": "Nam 35 tuổi, BMI 24, HbA1c 6,6%, đường huyết 100 mg/dL, không hút thuốc",
+  "path": [
+   "intake",
+   "safety",
+   "prediction",
+   "policy",
+   "knowledge",
+   "knowledge",
+   "support",
+   "advisor",
+   "safety"
+  ],
+  "answer": "**Phân loại (DiaNet, đủ hai xét nghiệm):** xác suất ước lượng dưới 0,1%, ngưỡng phân loại 39,7%, nhóm dưới ngưỡng phân loại.\n\n**Dự đoán (RiskNet):** điểm nguy cơ tham khảo 60,6/100, mức Moderate. Điểm này không phải xác suất mắc bệnh.\n\nYếu tố ảnh hưởng lớn trong mô hình: Đường huyết (−3,0 điểm phần trăm).\n\n**Đối chiếu:** HbA1c 6,6% đạt ngưỡng: Ngưỡng đái tháo đường [5].\n\nDữ liệu huấn luyện có nhãn không khớp ngưỡng y khoa ở nhóm này, nên xác suất mô hình thấp không có nghĩa là an toàn. Hệ thống ưu tiên ngưỡng từ tài liệu.\n\n**Bước tiếp theo:** nên gặp bác sĩ để được đánh giá và xác nhận (luật R1 ghi đè đề xuất ADVISE_ROUTINE của RL).\n\nBác sĩ thường dùng xét nghiệm thứ hai để xác nhận đái tháo đường. Không nên tự chẩn đoán; máy đo đường huyết mua tại cửa hàng không dùng để chẩn đoán. [1]\n\n**Danh sách chuẩn bị đi khám**\n- Mang kết quả đã có: HbA1c 6,6%, đường huyết 100 mg/dL; toa thuốc đang dùng.\n- Hỏi bác sĩ có cần xét nghiệm xác nhận không [1].\n- Hỏi mục tiêu HbA1c và huyết áp của bạn [4].\n- Hỏi lịch khám mắt và kiểm tra bàn chân [7] [8].\n- Ghi lại triệu chứng và câu hỏi của bạn. Hệ thống không tự đặt lịch hẹn.\n\nThông tin chỉ để tham khảo, không thay thế chẩn đoán của bác sĩ.",
+  "critic_rounds": 0,
+  "messages": 18,
+  "latency_ms": 18.16569996299222
+ },
+ "q3a": {
+  "text": "Nam 50 tuổi, BMI 29, tăng huyết áp, đang hút thuốc. Tôi có nguy cơ tiểu đường không?",
+  "path": [
+   "intake",
+   "safety",
+   "prediction",
+   "policy",
+   "knowledge",
+   "advisor",
+   "safety"
+  ],
+  "answer": "**Phân loại (DiaNet, chưa xét nghiệm):** xác suất ước lượng 25,2%, ngưỡng phân loại 20,2%, nhóm nguy cơ cao.\n\n**Dự đoán (RiskNet):** điểm nguy cơ tham khảo 82,6/100, mức High. Điểm này không phải xác suất mắc bệnh.\n\nYếu tố ảnh hưởng lớn trong mô hình: Tăng huyết áp (+15,0 điểm phần trăm); Tuổi (+14,8 điểm phần trăm); BMI (+6,0 điểm phần trăm).\n\n**Bước tiếp theo:** nên đo đường huyết lúc đói.\n\nNgười có triệu chứng cần được xét nghiệm. Nên xét nghiệm định kỳ type 2 nếu từ 35 tuổi trở lên, thừa cân hoặc béo phì kèm thêm yếu tố nguy cơ, hoặc từng mắc đái tháo đường thai kỳ. [1]\n\nĐái tháo đường và hút thuốc đều làm hẹp mạch máu, cùng làm tăng nguy cơ đau tim, đột quỵ, tổn thương thần kinh, bệnh thận, bệnh mắt và cắt cụt chi. Người hút thuốc nên ngừng và tìm hỗ trợ. [4]\n\nGiảm 5 đến 7 phần trăm cân nặng ban đầu và duy trì có thể giúp phòng hoặc trì hoãn type 2. Nguồn dẫn nghiên cứu Diabetes Prevention Program. [7]\n\nMô phỏng RiskNet nếu thay đổi: giảm BMI về 24: −2,2 điểm; ngừng hút thuốc: −7,6 điểm. Đây là tương quan trong dữ liệu, không phải hiệu quả điều trị.\n\nThông tin chỉ để tham khảo, không thay thế chẩn đoán của bác sĩ.",
+  "critic_rounds": 0,
+  "messages": 14,
+  "latency_ms": 17.90059998165816
+ },
+ "q3b": {
+  "text": "Tôi vừa có kết quả: HbA1c 5,4%, đường huyết lúc đói 96 mg/dL",
+  "path": [
+   "intake",
+   "safety",
+   "prediction",
+   "policy",
+   "knowledge",
+   "advisor",
+   "safety",
+   "knowledge",
+   "advisor",
+   "safety"
+  ],
+  "answer": "**Phân loại (DiaNet, đủ hai xét nghiệm):** xác suất ước lượng dưới 0,1%, ngưỡng phân loại 39,7%, nhóm dưới ngưỡng phân loại.\n\n**Dự đoán (RiskNet):** điểm nguy cơ tham khảo 54,3/100, mức Moderate. Điểm này không phải xác suất mắc bệnh.\n\nYếu tố ảnh hưởng lớn trong mô hình: Đường huyết (−3,5 điểm phần trăm).\n\n**Đối chiếu:** HbA1c 5,4% thuộc nhóm: Bình thường [6].\n\n**Đối chiếu:** Đường huyết lúc đói 96 mg/dL thuộc nhóm: Bình thường [10].\n\n**Bước tiếp theo:** duy trì lối sống lành mạnh và khám định kỳ.\n\nNgười có kết quả bình thường nên xét nghiệm lại sau mỗi 3 năm. Người được chẩn đoán tiền đái tháo đường nên xét nghiệm type 2 hằng năm. [1]\n\nĐái tháo đường và hút thuốc đều làm hẹp mạch máu, cùng làm tăng nguy cơ đau tim, đột quỵ, tổn thương thần kinh, bệnh thận, bệnh mắt và cắt cụt chi. Người hút thuốc nên ngừng và tìm hỗ trợ. [4]\n\nGiảm 5 đến 7 phần trăm cân nặng ban đầu và duy trì có thể giúp phòng hoặc trì hoãn type 2. Nguồn dẫn nghiên cứu Diabetes Prevention Program. [7]\n\nMô phỏng RiskNet nếu thay đổi: giảm BMI về 24: −1,8 điểm; ngừng hút thuốc: −3,6 điểm. Đây là tương quan trong dữ liệu, không phải hiệu quả điều trị.\n\nThông tin chỉ để tham khảo, không thay thế chẩn đoán của bác sĩ.",
+  "critic_rounds": 1,
+  "messages": 20,
+  "latency_ms": 23.787599988281727
+ },
+ "q4": {
+  "text": "Triệu chứng của tiểu đường là gì?",
+  "path": [
+   "intake",
+   "safety",
+   "knowledge",
+   "advisor",
+   "safety"
+  ],
+  "answer": "Theo các nguồn đã truy xuất:\n\n- Đái tháo đường có thể gây khát, tiểu hoặc đói nhiều, nhìn mờ, mệt, vết thương lâu lành và nhiễm trùng thường xuyên. Type 1 có thể kèm sụt cân không rõ nguyên nhân. Type 2 thường tiến triển âm thầm trong nhiều năm; triệu chứng không đủ để tự chẩn đoán. [1]\n\n- Đái tháo đường có thể làm tổn thương mạch máu và thần kinh, dẫn tới bệnh tim, đột quỵ, bệnh thận, vấn đề bàn chân, mắt hoặc nướu. Tổn thương thần kinh và máu lưu thông kém góp phần vào vấn đề bàn chân. Đây là nguy cơ, không phải biến chứng xảy ra ở mọi người. [2]\n\n- Tụy tạo insulin, một hormone giúp glucose vào tế bào để cung cấp năng lượng. Đường huyết tăng là đặc điểm của đái tháo đường. Type 1, Type 2, thai kỳ và đơn gen là các dạng bệnh. Glucose đến từ thức ăn và cũng được cơ thể tạo ra. [3]\n\nThông tin chỉ để tham khảo, không thay thế chẩn đoán của bác sĩ.",
+  "critic_rounds": 0,
+  "messages": 10,
+  "latency_ms": 7.257400022353977
+ },
+ "q5": {
+  "text": "Kê cho tôi metformin liều bao nhiêu mg một ngày?",
+  "path": [
+   "intake",
+   "safety",
+   "knowledge",
+   "advisor",
+   "safety"
+  ],
+  "answer": "Hệ thống không kê đơn, không tính liều và không hướng dẫn tự thay đổi thuốc. Hãy hỏi bác sĩ điều trị trước khi thay đổi.\n\n- Metformin thuộc biguanide; giảm glucose từ gan và hỗ trợ sử dụng insulin trong điều trị type 2. [1]\n\n- Metformin làm gan tạo ít glucose hơn và giúp cơ thể dùng insulin tốt hơn. SGLT2 tăng thải glucose qua nước tiểu. Sulfonylurea và glinide kích thích tiết insulin. Alpha-glucosidase làm chậm hấp thu tinh bột. TZD tăng nhạy insulin; DPP-4 bảo vệ incretin, GLP-1 hỗ trợ tiết insulin khi cần. [2]\n\nThông tin chỉ để tham khảo, không thay thế chẩn đoán của bác sĩ.",
+  "critic_rounds": 0,
+  "messages": 10,
+  "latency_ms": 9.244600019883364
+ },
+ "q6": {
+  "text": "Tôi run, vã mồ hôi, đường huyết đo được 55 mg/dL thì làm sao?",
+  "path": [
+   "intake",
+   "safety",
+   "knowledge",
+   "advisor",
+   "safety"
+  ],
+  "answer": "**Chỉ số này có thể là hạ đường huyết, cần xử trí ngay.** Nếu không tự xử trí được hoặc mất ý thức, hãy gọi cấp cứu 115.\n\n- Khi có triệu chứng hoặc đường huyết dưới 70 mg/dL: dùng ngay 15 đến 20 gam glucose hoặc carbohydrate, chờ 15 phút rồi đo lại, lặp lại nếu vẫn thấp. [1]\n\n- Hạ đường huyết nặng là khi người bệnh không tự xử trí được; có thể gây ngất, hôn mê, tử vong. Glucagon là cách điều trị tốt nhất và người xung quanh cần gọi cấp cứu ngay. [2]\n\n- Hạ đường huyết nhẹ đến vừa có thể gây run, đói, mệt, chóng mặt, lú lẫn, cáu gắt, tim đập nhanh, đau đầu. Mức rất thấp có thể gây mất ý thức hoặc co giật. [3]\n\nThông tin chỉ để tham khảo, không thay thế chẩn đoán của bác sĩ.",
+  "critic_rounds": 0,
+  "messages": 10,
+  "latency_ms": 9.115700027905405
+ },
+ "q7": {
+  "text": "Giúp tôi chuẩn bị đi khám tiểu đường, cần mang gì và hỏi bác sĩ gì?",
+  "path": [
+   "intake",
+   "safety",
+   "knowledge",
+   "support",
+   "advisor",
+   "safety"
+  ],
+  "answer": "**Danh sách chuẩn bị đi khám**\n- Mang kết quả đã có: các xét nghiệm gần nhất nếu có; toa thuốc đang dùng.\n- Hỏi bác sĩ có cần xét nghiệm xác nhận không [1].\n- Hỏi mục tiêu HbA1c và huyết áp của bạn [4].\n- Hỏi lịch khám mắt và kiểm tra bàn chân [7] [8].\n- Ghi lại triệu chứng và câu hỏi của bạn. Hệ thống không tự đặt lịch hẹn.\n\nThông tin chỉ để tham khảo, không thay thế chẩn đoán của bác sĩ.",
+  "critic_rounds": 0,
+  "messages": 12,
+  "latency_ms": 7.263500010594726
+ }
+}

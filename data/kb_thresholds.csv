@@ -1,0 +1,12 @@
+﻿test,category,lower,upper,unit,doc_id
+HbA1c,Bình thường,,5.7,%,N01
+HbA1c,Tiền đái tháo đường,5.7,6.5,%,N01
+HbA1c,Ngưỡng đái tháo đường,6.5,,%,N01
+Đường huyết đói,Bình thường,,100,mg/dL,N02
+Đường huyết đói,Tiền đái tháo đường,100,126,mg/dL,N02
+Đường huyết đói,Ngưỡng đái tháo đường,126,,mg/dL,N02
+OGTT 2 giờ,Bình thường,,140,mg/dL,N03
+OGTT 2 giờ,Tiền đái tháo đường,140,200,mg/dL,N03
+OGTT 2 giờ,Ngưỡng đái tháo đường,200,,mg/dL,N03
+Đường huyết ngẫu nhiên,Ngưỡng đái tháo đường (khi có triệu chứng),200,,mg/dL,N04
+Đường huyết,Hạ đường huyết,,70,mg/dL,N15

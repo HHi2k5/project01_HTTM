@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Trợ lý tiểu đường</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%230f6e66'/%3E%3Cpath d='M16 6c4 5.5 7 9 7 13a7 7 0 0 1-14 0c0-4 3-7.500 7-13z' fill='%23fff'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="/static/app.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <svg viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="8"/><path d="M16 6c4 5.500 7 9 7 13a7 7 0 0 1-14 0c0-4 3-7.500 7-13z"/></svg>
+      <div>
+        <strong>Trợ lý tiểu đường</strong>
+        <span>Hệ đa agent · Project 01</span>
+      </div>
+    </div>
+    <nav class="tabs" role="tablist" aria-label="Trang">
+      <button role="tab" id="tab-chat" aria-selected="true" aria-controls="view-chat">Tư vấn</button>
+      <button role="tab" id="tab-results" aria-selected="false" aria-controls="view-results">Kết quả thực nghiệm</button>
+    </nav>
+    <div class="topbar-actions">
+      <button class="btn ghost only-narrow" id="open-profile" type="button">Hồ sơ</button>
+      <button class="btn ghost" id="new-session" type="button">Phiên mới</button>
+    </div>
+  </header>
+
+  <main id="view-chat" class="workspace" role="tabpanel" aria-labelledby="tab-chat">
+    <aside class="panel profile" id="profile-panel" aria-label="Hồ sơ sức khỏe">
+      <div class="panel-head">
+        <h2>Hồ sơ sức khỏe</h2>
+        <button class="icon-btn only-narrow" data-close="profile-panel" type="button" aria-label="Đóng hồ sơ">×</button>
+      </div>
+      <form id="profile-form" novalidate>
+        <div class="row">
+          <label>Giới tính
+            <select name="gender">
+              <option value="">Chưa rõ</option>
+              <option value="Male">Nam</option>
+              <option value="Female">Nữ</option>
+            </select>
+          </label>
+          <label>Tuổi
+            <input name="age" inputmode="decimal" autocomplete="off" placeholder="45">
+          </label>
+        </div>
+        <div class="row">
+          <label>Chiều cao (cm)
+            <input name="height" inputmode="decimal" autocomplete="off" placeholder="165">
+          </label>
+          <label>Cân nặng (kg)
+            <input name="weight" inputmode="decimal" autocomplete="off" placeholder="65">
+          </label>
+        </div>
+        <label>BMI (kg/m²)
+          <input name="bmi" inputmode="decimal" autocomplete="off" placeholder="Tự tính từ chiều cao, cân nặng">
+        </label>
+        <div class="row">
+          <label>HbA1c (%)
+            <input name="hba1c" inputmode="decimal" autocomplete="off" placeholder="5,5">
+          </label>
+          <label>Đường huyết (mg/dL)
+            <input name="glucose" inputmode="decimal" autocomplete="off" placeholder="100">
+          </label>
+        </div>
+        <label class="check"><input type="checkbox" name="fasting"> Đường huyết đo lúc đói</label>
+        <label>Hút thuốc
+          <select name="smoking">
+            <option value="">Chưa rõ</option>
+            <option value="never">Chưa bao giờ</option>
+            <option value="former">Đã bỏ</option>
+            <option value="current">Đang hút</option>
+          </select>
+        </label>
+        <fieldset>
+          <legend>Tình trạng khác</legend>
+          <label class="check"><input type="checkbox" name="hypertension"> Tăng huyết áp</label>
+          <label class="check"><input type="checkbox" name="heart_disease"> Bệnh tim</label>
+          <label class="check"><input type="checkbox" name="family_history"> Gia đình có người mắc</label>
+          <label class="check"><input type="checkbox" name="low_activity"> Ít vận động</label>
+        </fieldset>
+        <p class="form-note" id="form-note" role="status"></p>
+        <div class="form-actions">
+          <button class="btn primary" type="submit">Đánh giá nguy cơ</button>
+          <button class="btn" type="button" id="save-profile">Chỉ lưu hồ sơ</button>
+          <button class="btn quiet" type="button" id="clear-profile">Xóa chỉ số</button>
+        </div>
+      </form>
+    </aside>
+
+    <section class="chat" aria-label="Hội thoại">
+      <div class="chat-scroll" id="chat-scroll">
+        <div class="chat-column" id="messages" aria-live="polite"></div>
+      </div>
+      <div class="composer-wrap">
+        <div class="followup" id="followup" hidden></div>
+        <form class="composer" id="composer">
+          <label class="sr-only" for="question">Câu hỏi</label>
+          <textarea id="question" rows="1" maxlength="1000" placeholder="Hỏi về tiểu đường hoặc nhập chỉ số…"></textarea>
+          <button class="send" type="submit" aria-label="Gửi câu hỏi">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 19V5M6 11l6-6 6 6"/></svg>
+          </button>
+        </form>
+        <p class="disclaimer">Chỉ phục vụ học tập, không thay thế chẩn đoán của bác sĩ. Khẩn cấp hãy gọi 115.</p>
+      </div>
+    </section>
+
+    <aside class="panel inspector" id="inspector" aria-label="Phân tích lượt trả lời">
+      <div class="panel-head">
+        <h2>Phân tích lượt này</h2>
+        <button class="icon-btn only-medium" data-close="inspector" type="button" aria-label="Đóng phân tích">×</button>
+      </div>
+      <div id="inspector-body"></div>
+    </aside>
+  </main>
+
+  <main id="view-results" class="results" role="tabpanel" aria-labelledby="tab-results" hidden>
+    <div class="results-column" id="results-body"></div>
+  </main>
+
+  <div class="scrim" id="scrim" hidden></div>
+  <script src="/static/app.js"></script>
+</body>
+</html>
